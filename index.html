@@ -53,6 +53,32 @@ textarea,input{width:100%;border:1px solid #cbd8d3;border-radius:12px;background
   .sheet{width:min(900px,88vw);border-radius:24px 24px 0 0;padding:26px 30px 34px}
   .sheet textarea{min-height:34vh}
 }
+
+/* Global continuity pass: readable dark hierarchy + notebook-scale writing surfaces */
+html[data-theme="dark"] body{color:#e5efed}
+html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] b,html[data-theme="dark"] summary{color:#edf5f3}
+html[data-theme="dark"] .quote{color:#e1ece9!important;opacity:1!important}
+html[data-theme="dark"] .q>b{color:#f2f7f6}
+html[data-theme="dark"] .eyebrow{color:#afc4c1;opacity:1}
+html[data-theme="dark"] .small,html[data-theme="dark"] .room{color:#adc0bd}
+html[data-theme="dark"] textarea::placeholder,html[data-theme="dark"] input::placeholder{color:#9fb2b0;opacity:1}
+html[data-theme="dark"] textarea{border-color:#66807f;background:#10282e;color:#edf5f3}
+.q{margin-top:38px;margin-bottom:14px}
+.q .quote{margin:12px 0 30px}
+.event textarea{display:block;width:100%;min-height:300px;margin:14px 0 0;border-radius:18px}
+.note.big textarea{min-height:56vh}
+.captureitem{line-height:1.6}
+@media (orientation:landscape) and (min-width:900px){
+  .event{padding-top:38px;padding-bottom:38px}
+  .event textarea{min-height:42vh!important;padding:26px 28px!important;font-size:19px!important;line-height:1.8!important}
+  .note.big textarea{min-height:62vh!important;padding:28px 30px!important;font-size:19px!important;line-height:1.8!important}
+  .q{margin-top:44px;margin-bottom:18px}
+  .q .quote{font-size:26px!important;line-height:1.48!important;margin:12px 0 34px!important}
+  .why{margin-top:26px;margin-bottom:32px}
+  .sessionactions{margin-top:48px!important;padding-top:30px!important}
+  .event+.event{margin-top:34px}
+  .panel,.event,.note{margin-bottom:30px}
+}
 </style></head><body>
 <header class="top"><div class="wrap"><div style="display:flex;justify-content:space-between;gap:16px;align-items:flex-start"><div><div class="eyebrow">Cy Gorman · Interspeech 2026 · Sydney</div><h1>Fieldbook</h1><p>The whole conference is here. Your path through it changes what becomes important next.</p></div><button id="themeToggle" onclick="toggleTheme()" style="border:1px solid #ffffff44;background:#ffffff14;color:#fff;border-radius:999px;padding:9px 12px;font-weight:800;white-space:nowrap">◐ Dark</button></div><div class="progress" id="dayNav"></div></div></header>
 <div class="lensbar"><div class="lensrow"><button class="lens on" data-lens="research">Research Cy</button><button class="lens" data-lens="professional">Professional Cy</button><button class="lens" data-lens="rnd">Nurobodi R&amp;D</button><button class="lens" data-lens="expansion">Nurobodi Expansion</button></div></div>
