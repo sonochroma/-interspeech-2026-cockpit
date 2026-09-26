@@ -10,6 +10,35 @@ main{max-width:980px;margin:auto;padding:18px 14px}.page{display:none}.page.on{d
 .panel,.event,.note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:12px;box-shadow:0 3px 16px #102d3508}.panel h3,.event h3{margin:2px 0 8px}.sectiontitle{margin:22px 2px 10px;font:700 21px Georgia,serif}.small{font-size:13px;color:var(--muted)}.time{font-weight:850;color:var(--teal)}.room{font-size:12px;color:var(--muted)}.status{display:inline-block;font-size:10px;font-weight:850;letter-spacing:.07em;border-radius:999px;padding:4px 7px;margin-left:6px;background:#edf1ef}.lock{background:#f7eadc;color:#82501d}.float{background:#eaf1f6;color:#3e6081}.radar{background:#edf2ee;color:#4f6d57}.core{border-left:4px solid var(--gold)}
 .event summary{cursor:pointer;list-style:none}.event summary::-webkit-details-marker{display:none}.event summary:after{content:"＋";float:right;color:var(--muted)}.event[open] summary:after{content:"−"}.why{margin:12px 0;background:#f1f6f4;border-radius:12px;padding:11px}.lenscopy{display:none}.lenscopy.on{display:block}.actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.actions button,.ghost{border:1px solid var(--line);background:#fff;border-radius:10px;padding:8px 10px;font-weight:700;color:var(--ink)}
 textarea,input{width:100%;border:1px solid #cbd8d3;border-radius:12px;background:#fcfdfc;padding:11px;color:var(--ink)}textarea{min-height:112px;resize:vertical}.big textarea{min-height:230px;font-size:17px;line-height:1.65}.tagrow{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.tag{font-size:11px;background:#eef2f0;padding:4px 7px;border-radius:999px}.thread{border-left:3px solid var(--teal);padding-left:11px;margin:12px 0}.person{padding:10px 0;border-top:1px solid var(--line)}.person:first-of-type{border-top:0}.footerNav{display:flex;justify-content:space-between;gap:10px;margin-top:28px}.footerNav button{border:0;background:var(--deep);color:#fff;border-radius:13px;padding:12px 15px;font-weight:800}.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:30;border:0;border-radius:999px;background:var(--gold);color:white;padding:14px 17px;font-weight:900;box-shadow:0 8px 25px #0004}.modal{position:fixed;inset:0;background:#102d35dd;z-index:40;display:none;align-items:flex-end;justify-content:center}.modal.on{display:flex}.sheet{background:var(--paper);width:min(720px,100%);max-height:88vh;overflow:auto;border-radius:22px 22px 0 0;padding:18px 16px calc(22px + env(safe-area-inset-bottom))}.sheet h3{font:700 24px Georgia,serif;margin:4px 0 10px}.sheet textarea{min-height:220px}.sheet .choicegrid button.on{background:var(--deep);color:#fff}.sessionbody{padding-top:6px}.sessionmeta{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.sessionmeta button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 10px}.event:not([open]){padding-top:19px;padding-bottom:19px}.choicegrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.choicegrid button{border:1px solid var(--line);background:#fff;border-radius:12px;padding:12px;text-align:left}.timeline{border-left:2px solid #cbd8d3;margin-left:7px;padding-left:17px}.now{font-size:12px;font-weight:800;color:var(--teal);letter-spacing:.08em}.quote{font-family:Georgia,serif;font-size:20px;line-height:1.4;color:#355057}.danger{border-left:4px solid var(--rose)}.linklike{color:var(--teal);font-weight:750}
+
+@media (orientation:landscape) and (min-width:900px) and (max-width:1400px){
+  .wrap,.lensrow,.lenscontext,main{max-width:1180px}
+  main{padding:24px 34px 100px}
+  .top{padding-left:34px;padding-right:34px}
+  .top h1{font-size:38px}
+  .lensbar{padding-left:34px;padding-right:34px}
+  .lenscontext{margin-top:9px}
+  .hero{max-width:1000px;padding:34px 0 26px}
+  .hero h2{font-size:38px;max-width:900px}
+  .carry{max-width:1000px;padding:14px 18px}
+  .utilitybar{max-width:1000px;margin:4px 0 34px}
+  .sectiontitle{font-size:25px;margin-top:42px}
+  .note.big,.timeline{max-width:1000px}
+  .big textarea{min-height:46vh;font-size:19px;line-height:1.75;padding:22px}
+  .event{padding:25px 28px;margin-bottom:20px}
+  .event summary{font-size:18px;line-height:1.45}
+  .event[open] .why{margin-top:20px}
+  .why{font-size:17px;line-height:1.65;padding:18px 20px}
+  .event[open]>.panel{margin:16px 0;padding:16px!important}
+  .quote{max-width:850px;font-size:25px;line-height:1.42;margin:7px 0 16px}
+  .event textarea{min-height:32vh;font-size:18px;line-height:1.7;padding:20px}
+  .sessionactions{margin-top:22px;padding-top:15px}
+  .sessionactions .actions{grid-template-columns:repeat(3,1fr);gap:10px}
+  .sessionactions .actions button{min-height:92px}
+  .fab{right:30px;bottom:24px}
+  .sheet{width:min(900px,88vw);border-radius:24px 24px 0 0;padding:26px 30px 34px}
+  .sheet textarea{min-height:34vh}
+}
 </style></head><body>
 <header class="top"><div class="wrap"><div class="eyebrow">Cy Gorman · Interspeech 2026 · Sydney</div><h1>Fieldbook</h1><p>The whole conference is here. Your path through it changes what becomes important next.</p><div class="progress" id="dayNav"></div></div></header>
 <div class="lensbar"><div class="lensrow"><button class="lens on" data-lens="research">Research Cy</button><button class="lens" data-lens="professional">Professional Cy</button><button class="lens" data-lens="rnd">Nurobodi R&amp;D</button><button class="lens" data-lens="expansion">Nurobodi Expansion</button></div></div>
